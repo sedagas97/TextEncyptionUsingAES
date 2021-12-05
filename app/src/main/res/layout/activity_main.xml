@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/mainLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Applikacioni per encryptimin e texteve"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-16dp"></TextView>
+
+    <EditText
+        android:id="@+id/encryptText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Teksti për tu enkriptuar"
+        android:textIsSelectable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <Button
+        android:id="@+id/encryptButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Enkripto textin"
+        app:layout_constraintTop_toBottomOf="@+id/encryptText"
+        tools:layout_editor_absoluteX="0dp">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/encryptedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textIsSelectable="true"
+        app:layout_constraintTop_toBottomOf="@+id/encryptButton"
+        tools:layout_editor_absoluteX="0dp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/decryptButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dekripto tekstin e enkriptuar"
+        app:layout_constraintTop_toBottomOf="@+id/encryptedTextView"
+        tools:layout_editor_absoluteX="0dp"></Button>
+
+    <TextView
+        android:id="@+id/decryptedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/decryptButton"
+        tools:layout_editor_absoluteX="0dp">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
